@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Silverback Electronics Kubwa | Fastest Appliances in Abuja</title>
+<meta name="description" content="Silverback Electronics — Kubwa's fastest and most trusted appliance retailer. Verified multi-point showrooms, guaranteed 24-hour delivery & installation in Kubwa & Bwari Corridor." />
+<meta name="robots" content="index,follow" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Silverback Electronics Kubwa" />
+<meta property="og:title" content="Silverback Electronics Kubwa | Fastest Appliances in Abuja" />
+<meta property="og:description" content="Verified multi-point showrooms in Kubwa. 24-hour delivery & installation. Smart TVs, Inverter ACs, Refrigerators and more." />
+<meta property="og:image" content="logo.jpg" />
+<meta property="og:url" content="https://silverback.example/kubwa" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@SilverbackKubwa" />
+<meta name="twitter:title" content="Silverback Electronics Kubwa | Fastest Appliances in Abuja" />
+<meta name="twitter:description" content="Verified multi-point showrooms in Kubwa. 24-hour delivery & installation." />
+<meta name="twitter:image" content="logo.jpg" />
+
+<!-- Prefetch important small resources -->
+<link rel="preload" href="logo.jpg" as="image" />
+
+<!-- Font Awesome for icons (allowed) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+
+<!-- Google Analytics (replace G-XXXXXXXXXX with your GA4 ID) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  // !!! REMINDER: REPLACE 'G-XXXXXXXXXX' WITH THE ACTUAL GA4 ID BEFORE LAUNCH !!!
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true });
+</script>
+
+<!-- Structured Data: LocalBusiness with branches -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ElectronicsStore",
+  "name": "Silverback Electronics Kubwa",
+  "url": "https://silverback.example/kubwa",
+  "telephone": "+23480xxxxxxxx",
+  "description": "Verified multi-point showrooms in Kubwa with guaranteed 24-hour delivery and installation.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Phase 4, Opp. Wuse-in",
+    "addressLocality": "Kubwa",
+    "addressRegion": "Abuja",
+    "addressCountry": "NG"
+  },
+  "branch": [
+    {
+      "@type": "Store",
+      "name": "Silverback - Phase 4",
+      "address": { "@type":"PostalAddress", "streetAddress":"Opp. Wuse-in", "addressLocality":"Kubwa" }
+    },
+    {
+      "@type": "Store",
+      "name": "Silverback - Hamza Abdullahi Road",
+      "address": { "@type":"PostalAddress", "streetAddress":"Hamza Abdullahi Road, Village", "addressLocality":"Kubwa" }
+    },
+    {
+      "@type": "Store",
+      "name": "Silverback - 3 Phase Junction",
+      "address": { "@type":"PostalAddress", "streetAddress":"3 Phase Junction, Opp. R.C.C.G", "addressLocality":"Kubwa" }
+    }
+  ],
+  "openingHours": "Mo,Tu,We,Th,Fr,Sa 09:00-18:00",
+  "areaServed": "Kubwa, Bwari Corridor, Abuja",
+  "sameAs": [
+    "https://facebook.com/yourpage",
+    "https://www.instagram.com/silverbackelectronics?igsh=c3diYjU3MXhuMHY3",
+    "https://x.com/SilverbackABJ?t=BUq_komEDz8tS1eoHyz5oA&s=09",
+    "https://vm.tiktok.com/ZSHTehJxmXNPu-KL1lQ/"
+  ]
+}
+</script>
+
+<style>
+/* --------- VARIABLES & GLOBAL (system fonts only) --------- */
+:root{
+  --black:#000000;
+  --white:#ffffff;
+  --silver:#aaaaaa;
+  --dark-silver:#222222;
+  --glass: rgba(0,0,0,0.06);
+  --radius:18px;
+  --maxw:1100px;
+  --ease:cubic-bezier(.2,.9,.3,1);
+}
+
+/* minimal reset */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+  color:var(--dark-silver);
+  background:linear-gradient(180deg,var(--white),#f7f7f7);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  text-rendering:optimizeLegibility;
+  -webkit-text-size-adjust:100%;
+}
+
+/* Container */
+.container{width:92%;max-width:var(--maxw);margin:0 auto}
+
+/* HEADER */
+.header{
+  position:sticky;top:0;z-index:60;
+  backdrop-filter: blur(6px);
+  background:rgba(255,255,255,0.78);
+  border-bottom:1px solid rgba(0,0,0,0.06);
+}
+.nav{
+  display:flex;align-items:center;justify-content:space-between;padding:14px 0;
+}
+.logo img{height:56px;display:block}
+.nav-links{display:flex;gap:20px;align-items:center}
+.nav-links a{color:var(--dark-silver);text-decoration:none;font-weight:700;opacity:.95}
+.social-inline{display:flex;gap:12px;align-items:center}
+
+/* HAMBURGER for small screens */
+.nav-toggle{display:none;background:transparent;border:0;font-size:1.25rem;cursor:pointer}
+
+/* HERO (darkened premium) */
+.hero{
+  margin-top:6px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:28px;
+  align-items:center;
+  padding:56px 0 28px;
+}
+.hero-card{
+  background:linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.00));
+  border-radius:22px;
+  padding:32px;
+  box-shadow: 0 20px 60px rgba(17,17,17,0.06);
+  transform:translateZ(0);
+}
+.kicker{
+  display:inline-block;border-radius:999px;padding:6px 12px;background:var(--black);color:var(--white);font-weight:800;font-size:0.78rem;margin-bottom:12px;
+}
+.hero h1{
+  font-size:2.35rem;line-height:1.02;margin:6px 0 14px;color:var(--dark-silver);
+  font-weight:900;
+}
+.lead{color:var(--dark-silver);font-size:1.03rem;margin-bottom:18px}
+
+/* CTAs */
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.btn{
+  display:inline-flex;gap:10px;align-items:center;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:800;
+  transition:all 220ms var(--ease);
+}
+.btn-primary{background:var(--black);color:var(--white);box-shadow:0 10px 30px rgba(0,0,0,0.14)}
+.btn-ghost{background:transparent;border:1px solid var(--silver);color:var(--dark-silver)}
+
+/* HERO IMAGE with subtle dark overlay & frame */
+.hero-visual{position:relative;border-radius:20px;overflow:hidden;height:420px;box-shadow:0 30px 80px rgba(0,0,0,0.14)}
+.hero-visual img{width:100%;height:100%;object-fit:cover;display:block;transform:translateY(0);transition:transform 600ms var(--ease);will-change:transform}
+.hero-visual::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.12),rgba(0,0,0,0.28));mix-blend-mode:multiply}
+
+/* TRUST bar */
+.trust-bar{display:flex;gap:14px;align-items:center;margin-top:14px;border-radius:12px;padding:10px;background:linear-gradient(90deg,#fff,#fafafa);border:1px solid rgba(0,0,0,0.04)}
+.trust-bar strong{color:var(--black);font-weight:900}
+
+/* PANELS */
+.section{padding:48px 0}
+.section .heading{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.section h2{font-size:1.6rem;margin:0;color:var(--dark-silver);font-weight:900}
+.grid{
+  display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+}
+.card{
+  background:linear-gradient(180deg,#fff,#fbfbfb);
+  border-radius:14px;padding:18px;border:1px solid rgba(0,0,0,0.05);
+  box-shadow:0 14px 40px rgba(12,12,12,0.06);
+  transition:transform 320ms var(--ease), box-shadow 320ms var(--ease), opacity 300ms;
+  will-change:transform,opacity;
+}
+.card:hover{transform:translateY(-8px);box-shadow:0 28px 60px rgba(12,12,12,0.10)}
+
+/* product tags */
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px;list-style:none;padding:0}
+.tags li{background:var(--black);color:var(--white);padding:8px 12px;border-radius:999px;font-weight:700;font-size:0.92rem}
+
+/* features dark boxes */
+.feature{
+  background:linear-gradient(180deg, #0f0f0f, #0a0a0a);
+  color:var(--white);padding:24px;border-radius:14px;text-align:center;border:1px solid rgba(255,255,255,0.04)
+}
+.feature i{font-size:1.6rem;margin-bottom:8px;display:block}
+
+/* CONTACT & FOOTER */
+.contact-card{padding:24px;border-radius:14px;background:linear-gradient(180deg,#fff,#fcfcfc);border:1px solid rgba(0,0,0,0.04)}
+.footer{
+  padding:30px 0;background:linear-gradient(180deg,#0a0a0a,#000);color:#fff;text-align:center;margin-top:26px
+}
+.socials{display:flex;gap:12px;justify-content:center;margin-top:12px}
+.socials a{color:#fff;text-decoration:none;font-size:1.05rem;padding:8px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;opacity:0.95}
+
+/* FLOATING CTA */
+.floating-wa{
+  position:fixed;right:16px;bottom:16px;background:linear-gradient(180deg,#075e54,#054a46);color:#fff;
+  padding:12px 14px;border-radius:999px;box-shadow:0 20px 60px rgba(0,0,0,0.28);z-index:120;font-weight:900;text-decoration:none;display:inline-flex;gap:10px;align-items:center
+}
+
+/* MICRO-INTERACTIONS (scroll reveal utilities) */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity 520ms var(--ease), transform 520ms var(--ease)}
+.reveal.visible{opacity:1;transform:none}
+.hover-lift{transition:transform 260ms var(--ease)}
+.hover-lift:hover{transform:translateY(-6px)}
+
+/* small screens */
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;gap:18px;padding:28px 0}
+  .hero-visual{height:300px}
+  .nav-links{display:none}
+  .nav-toggle{display:block}
+  .hero h1{font-size:1.9rem}
+}
+
+/* very small */
+@media(max-width:420px){
+  .hero-visual{height:220px}
+  .btn{padding:10px 12px;font-size:0.95rem}
+}
+/* CONTACT FORM */
+.contact-container {
+  width: 92%;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #000;
+  color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  animation: fadeIn 0.8s ease;
+}
+
+.contact-title {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  font-size: 1rem;
+  color: #ddd;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 13px 16px;
+  border-radius: 10px;
+  border: 1px solid #555;
+  background: #111;
+  color: #fff;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #c0c0c0;
+  background: #000;
+  transform: scale(1.01);
+}
+
+textarea {
+  min-height: 150px;
+  resize: none;
+}
+
+.contact-btn {
+  background: #fff;
+  color: #000;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #c0c0c0;
+  transform: scale(1.03);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .contact-container {
+    padding: 30px 20px;
+  }
+
+  .contact-title {
+    font-size: 1.6rem;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container nav">
+    <div class="logo" aria-hidden="false"><img src="logo.jpg" alt="Silverback Electronics logo"></div>
+
+    <div class="nav-links" role="navigation" aria-label="Primary navigation">
+      <a href="#hero">Home</a>
+      <a href="#locations">Locations</a>
+      <a href="#vision">E-Commerce</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Open menu" title="Menu"><i class="fa fa-bars"></i></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<main id="main">
+  <section id="hero" class="container hero">
+    <div class="hero-card reveal">
+      <span class="kicker">FAST • LOCAL • VERIFIED</span>
+      <h1>Silverback Electronics — Kubwa’s Trusted Appliance Hub</h1>
+      <p class="lead"><strong>Guaranteed 24-Hour Delivery & Installation</strong> across Kubwa & Bwari Corridor. Verified multi-point showrooms ready to deliver the fastest service in the FCT.</p>
+
+      <div class="cta-row" role="group" aria-label="Primary CTAs">
+        <a class="btn btn-primary" href="tel:+2347066570216" aria-label="Call Sales Team"><i class="fa fa-phone"></i> CALL SALES TEAM</a>
+        <a class="btn btn-ghost" href="https://wa.me/2347066570216" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i> CHAT ON WHATSAPP</a>
+      </div>
+
+      <div class="trust-bar" aria-hidden="true">
+        <span style="font-weight:700;color:var(--dark-silver)">Backed by 3 verified Kubwa showrooms</span>
+        <span style="margin-left:auto;color:var(--silver);font-weight:700">24H Delivery • Installation • Warranties</span>
+      </div>
+    </div>
+
+    <div class="hero-visual hover-lift" aria-hidden="false">
+      <!-- hero image placeholder - replace src with your path -->
+      <img src="https://d21d281c1yd2en.cloudfront.net/media/blog_images/c69a5d79-7e43-4657-b04c-29339f7c490e_1200x1200.jpg" alt="Premium appliances hero image placeholder">
+    </div>
+  </section>
+
+  <!-- LOCATIONS -->
+  <section id="locations" class="section container">
+    <div class="heading">
+      <h2><i class="fa fa-location-dot" aria-hidden="true"></i>&nbsp; Verified Local Presence</h2>
+    </div>
+
+    <div class="grid" aria-live="polite">
+      <article class="card reveal hover-lift">
+        <h3 style="margin-bottom:8px">Phase 4</h3>
+        <p style="margin-bottom:6px;color:var(--dark-silver)">Opp. Wuse-in, Kubwa</p>
+        <p style="color:var(--silver)">Showroom • Sales • Install</p>
+      </article>
+
+      <article class="card reveal hover-lift">
+        <h3>Hamza Abdullahi Road</h3>
+        <p style="margin-bottom:6px;color:var(--dark-silver)">Village, Kubwa</p>
+        <p style="color:var(--silver)">Display • Service Desk</p>
+      </article>
+
+      <article class="card reveal hover-lift">
+        <h3>3 Phase Junction</h3>
+        <p style="margin-bottom:6px;color:var(--dark-silver)">Opp. R.C.C.G, Kubwa</p>
+        <p style="color:var(--silver)">Pickup • Returns</p>
+      </article>
+    </div>
+
+    <h3 style="margin-top:20px">Products</h3>
+    <ul class="tags" aria-hidden="false">
+      <li>Smart TVs</li><li>Inverter ACs</li><li>Refrigerators</li><li>Washing Machines</li><li>Generators</li>
+    </ul>
+  </section>
+
+  <!-- VISION / E-COMMERCE -->
+  <section id="vision" class="section container">
+    <div class="heading"><h2><i class="fa fa-bolt"></i>&nbsp; Our Next Step: Full E-commerce</h2></div>
+
+    <div class="grid">
+      <div class="feature reveal">
+        <i class="fa fa-credit-card"></i>
+        <h4 style="margin:12px 0 8px;color:var(--white)">BNPL Financing</h4>
+        <p style="color:rgba(255,255,255,0.9)">Spread payments 6–12 months — essential for high ticket conversions in FCT.</p>
+      </div>
+
+      <div class="feature reveal">
+        <i class="fa fa-screwdriver-wrench"></i>
+        <h4 style="margin:12px 0 8px;color:var(--white)">Premium Services</h4>
+        <p style="color:rgba(255,255,255,0.9)">Installation & certified e-waste removal — trusted Silverback experience.</p>
+      </div>
+
+      <div class="feature reveal">
+        <i class="fa fa-boxes-stacked"></i>
+        <h4 style="margin:12px 0 8px;color:var(--white)">Multi-Store Inventory</h4>
+        <p style="color:rgba(255,255,255,0.9)">Real-time stock across all Kubwa stores to enable the 24-hour promise.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:20px">
+      <a href="https://wa.me/2347066570216" class="btn btn-primary" aria-label="Discuss E-commerce on WhatsApp"><i class="fab fa-whatsapp"></i> DISCUSS THE FULL E-COMMERCE PLAN</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container">
+    <div class="grid">
+      <div class="contact-card reveal">
+        <h3>Contact</h3>
+        <p style="margin:6px 0"><strong>Phone:</strong> <a href="tel:+23480xxxxxxxx">+23480xxxxxxxx</a></p>
+        <p style="margin:6px 0"><strong>Email:</strong> <a href="mailto:sales@silverback.example">sales@silverback.example</a></p>
+        <p style="margin-top:12px;color:var(--silver)">Hours: Mon–Sat 09:00–18:00</p>
+      </div>
+
+      <div class="card reveal">
+        <h3>Why Silverback?</h3>
+        <ul style="margin-top:8px;color:var(--dark-silver)">
+          <li><strong>Speed:</strong> Multi-point network enabling same/next-day delivery in Kubwa.</li>
+          <li><strong>Trust:</strong> Physical showrooms, warranties, certified installers.</li>
+          <li><strong>Ready:</strong> Designed for e-commerce scale with inventory routing.</li>
+        </ul>
+        <div style="margin-top:12px">
+          <a class="btn btn-ghost" href="#locations">View Showrooms</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact-form" class="contact-container">
+  <h2 class="contact-title"><i class="fa fa-envelope"></i> Send Us a Message</h2>
+
+  <form action="#" method="POST" class="form-box">
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="0803 000 0000" required>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+    </div>
+
+    <button type="submit" class="contact-btn">
+      <i class="fa fa-paper-plane"></i> Send Message
+    </button>
+  </form>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div style="display:flex;flex-direction:column;gap:6px;align-items:center">
+      <div style="font-weight:800;font-size:1rem">Silverback Electronics — Kubwa</div>
+      <small style="color:rgba(255,255,255,0.78)">© <span id="year"></span> Silverback Electronics. All rights reserved.</small>
+
+      <div class="socials" role="navigation" aria-label="Social links" style="margin-top:12px">
+        <!-- Replace hrefs with your actual pages -->
+        <a href="https://facebook.com/yourpage" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/silverbackelectronics?igsh=c3diYjU3MXhuMHY3" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/SilverbackABJ?t=BUq_komEDz8tS1eoHyz5oA&s=09" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://vm.tiktok.com/ZSHTehJxmXNPu-KL1lQ/" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a class="floating-wa" href="https://wa.me/2347066570216" target="_blank" rel="noopener" aria-label="WhatsApp Sales">
+  <i class="fab fa-whatsapp"></i><span style="font-weight:900;margin-left:6px">CHAT</span>
+</a>
+
+<!-- SCRIPTS: smooth scroll, mobile nav, scroll reveal, small hero parallax -->
+<script>
+/* Year */
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* Mobile menu toggle (minimal DOM changes) */
+const navToggle = document.querySelector('.nav-toggle');
+const navLinks = document.querySelector('.nav-links');
+if(navToggle){
+  navToggle.addEventListener('click', ()=> {
+    const isShown = navLinks.style.display === 'flex';
+    navLinks.style.display = isShown ? 'none' : 'flex';
+    navLinks.style.flexDirection = 'column';
+    navLinks.style.background = 'rgba(255,255,255,0.98)';
+    navLinks.style.padding = '12px';
+    navLinks.style.position = 'absolute';
+    navLinks.style.right = '18px';
+    navLinks.style.top = '70px';
+    navLinks.style.boxShadow = '0 10px 30px rgba(0,0,0,0.12)';
+  });
+}
+
+/* Smooth scroll for internal anchors */
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click', function(e){
+    const href = this.getAttribute('href');
+    if(href.length > 1 && document.querySelector(href)){
+      e.preventDefault();
+      const target = document.querySelector(href);
+      const top = target.getBoundingClientRect().top + window.pageYOffset - 70;
+      window.scrollTo({top, behavior:'smooth'});
+    }
+  })
+});
+
+/* Scroll reveal using IntersectionObserver */
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target); // run once
+    }
+  });
+},{threshold:0.12});
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+/* small parallax on hero image on scroll (subtle) */
+const heroImg = document.querySelector('.hero-visual img');
+if(heroImg){
+  window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const offset = Math.min(30, scrolled * 0.06);
+    heroImg.style.transform = `translateY(${offset}px)`;
+  }, {passive:true});
+}
+
+/* Accessibility: close mobile menu on outside click */
+document.addEventListener('click', (e)=>{
+  if(navLinks && navLinks.style.display === 'flex'){
+    const withinNav = e.target.closest('.nav');
+    if(!withinNav){
+      navLinks.style.display = 'none';
+    }
+  }
+});
+</script>
+</body>
+</html>

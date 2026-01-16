@@ -23,7 +23,7 @@
 
   /* Spacing & Layout */
   --container-width: 1200px;
-  --header-height: 70px;
+  --header-height: 100px;
   --radius-lg: 24px;
   --radius-md: 16px;
   --radius-sm: 8px;
@@ -100,6 +100,7 @@ h3 {
 
 .text-gradient {
   background: linear-gradient(135deg, #fff 0%, #a1a1a6 100%);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -153,7 +154,7 @@ section {
 }
 
 .brand-logo {
-  height: 50px;
+  height: 85px;
   width: auto;
   object-fit: contain;
   border-radius: var(--radius-sm);
@@ -480,11 +481,16 @@ textarea:focus {
     margin-top: 2rem;
   }
 
+  /* Adjust header height for mobile */
+  :root {
+    --header-height: 80px;
+  }
+
   .brand {
     font-size: 1.1rem;
   }
 
   .brand-logo {
-    height: 35px;
+    height: 60px;
   }
 }

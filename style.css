@@ -152,6 +152,13 @@ section {
   color: var(--text-muted);
 }
 
+.brand-logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+}
+
 .nav-links {
   display: flex;
   gap: 2rem;

@@ -479,4 +479,12 @@ textarea:focus {
     height: 300px;
     margin-top: 2rem;
   }
+
+  .brand {
+    font-size: 1.1rem;
+  }
+
+  .brand-logo {
+    height: 35px;
+  }
 }

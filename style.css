@@ -194,6 +194,10 @@ section {
   padding-top: var(--header-height);
   position: relative;
   overflow: hidden;
+  background: linear-gradient(to bottom, rgba(5, 5, 5, 0.7), rgba(5, 5, 5, 0.9)), url('hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* Background Glow Effect */
@@ -309,6 +313,31 @@ section {
   transform: scale(1.05);
   z-index: 10;
 }
+
+.card-cooling {
+  top: 20px;
+  right: 20px;
+  width: 200px;
+}
+.card-cooling i { color: #00bcd4; font-size: 2rem; margin-bottom: 0.5rem; }
+
+.card-delivery {
+  top: 140px;
+  left: 0px;
+  width: 220px;
+  z-index: 2;
+}
+.card-delivery i { color: #4caf50; font-size: 2rem; margin-bottom: 0.5rem; }
+
+.card-warranty {
+  top: 240px;
+  right: 40px;
+  width: 180px;
+}
+.card-warranty i { color: #ffc107; font-size: 2rem; margin-bottom: 0.5rem; }
+
+.stat-card h4 { margin: 0; }
+.stat-card small { color: #aaa; }
 
 /* Product Grid */
 .products-grid {
@@ -477,8 +506,22 @@ textarea:focus {
   }
 
   .hero-card-stack {
-    height: 300px;
-    margin-top: 2rem;
+    height: auto;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .stat-card {
+    position: relative;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    max-width: 320px;
+    transform: none;
   }
 
   /* Adjust header height for mobile */

@@ -1,4 +1,5 @@
-User-agent: *
+cUser-agent: *
 Allow: /
+Disallow: /thanks.html
 
-Sitemap: https://silverbackelectronics.com/sitemap.xml
+Sitemap: https://silverbackelectronics.com.ng/sitemap.xml

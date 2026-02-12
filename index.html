@@ -41,10 +41,18 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"
+    media="print" onload="this.media='all'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  </noscript>
 
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Icons (Deferred) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print"
+    onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </noscript>
 
   <!-- Styles -->
   <link rel="stylesheet" href="style.css">
@@ -137,7 +145,7 @@
   <header class="site-header">
     <div class="container nav-container">
       <a href="#" class="brand">
-        <img src="logo.jpg" alt="Silverback Electronics Logo" class="brand-logo">
+        <img src="logo.jpg" alt="Silverback Electronics Logo" class="brand-logo" width="85" height="85">
         Silverback <span>Electronics</span>
       </a>
 
@@ -158,266 +166,274 @@
   </header>
 
   <!-- Hero Section -->
-  <section id="home" class="hero-section">
-    <div class="hero-bg-glow"></div>
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <span class="eyebrow">📍 Verified Location: Shop 5, Millionaire Plaza, beside MTN office phase 4 kubwa,
-          Abuja</span>
-        <h1 class="text-gradient">Eutopia for durable home and office appliances Kubwa, Abuja.</h1>
-        <p class="hero-desc">
-          We supply Kubwa and Abuja with high-quality ACs, Fridges, and Washing Machines.
-          <strong>Guaranteed 24-hour delivery & installation.</strong>
-        </p>
-        <div class="hero-actions">
-          <a href="https://wa.me/2347066570216?text=Hello%20Silverback,%20I%20want%20to%20buy..."
-            class="btn btn-primary">
-            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
-          </a>
-          <a href="#products" class="btn btn-glass">
-            <i class="fa-solid fa-shop"></i> View Catalogue
-          </a>
-        </div>
-      </div>
-
-      <div class="hero-visual">
-        <!-- Stacked Cards Animation Placeholder -->
-        <div class="hero-card-stack">
-          <div class="stat-card card-cooling">
-            <i class="fa-solid fa-snowflake"></i>
-            <h4>Cooling Systems</h4>
-            <small>ACs, Fans & Chillers</small>
-          </div>
-          <div class="stat-card card-delivery">
-            <i class="fa-solid fa-truck-fast"></i>
-            <h4>Fast Delivery</h4>
-            <small>Kubwa & Environs</small>
-          </div>
-          <div class="stat-card card-warranty">
-            <i class="fa-solid fa-medal"></i>
-            <h4>Warranty</h4>
-            <small>On all purchases</small>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Catalogue / Products -->
-  <section id="products">
-    <div class="container">
-      <div style="text-align: center; margin-bottom: 3rem;">
-        <h2 class="text-gradient">Our Collection</h2>
-        <p style="color: var(--text-muted); max-width: 600px; margin: 1rem auto;">
-          Browse our catalog of tested and trusted home appliances.
-        </p>
-      </div>
-
-      <div class="products-grid">
-        <!-- Product 1 -->
-        <div class="product-card">
-          <div class="product-icon">
-            <i class="fa-solid fa-wind"></i>
-          </div>
-          <h3>Air Conditioners</h3>
-          <p>Split Units, Standing ACs, Inverter Types. Keep your home cool.</p>
-        </div>
-
-        <!-- Product 2 -->
-        <div class="product-card">
-          <div class="product-icon">
-            <i class="fa-solid fa-shirt"></i>
-          </div>
-          <h3>Washing Machines</h3>
-          <p>Top Loaders, Front Loaders, and Dryers. Efficient and durable.</p>
-        </div>
-
-        <!-- Product 3 -->
-        <div class="product-card">
-          <div class="product-icon">
-            <i class="fa-solid fa-sink"></i> <!-- Icon for appliance -->
-            <!-- Using Sink as proxy for Kitchen/White goods if better icon not found, FontAwesome v6 'kitchen-set' is good too -->
-          </div>
-          <h3>Kitchen & Cooking</h3>
-          <p>Gas Cookers, Microwaves, Ovens, Blenders.</p>
-        </div>
-
-        <!-- Product 4 -->
-        <div class="product-card">
-          <div class="product-icon">
-            <i class="fa-solid fa-tv"></i>
-          </div>
-          <h3>Smart Entertainment</h3>
-          <p>4K Android TVs, Sound Systems, and Accessories.</p>
-        </div>
-
-        <!-- Product 5 -->
-        <div class="product-card">
-          <div class="product-icon">
-            <i class="fa-solid fa-plug"></i>
-          </div>
-          <h3>Power Solutions</h3>
-          <p>Generators, Stabilizers, and Extension Boxes.</p>
-        </div>
-
-        <!-- Product 6 -->
-        <div class="product-card">
-          <div class="product-icon">
-            <i class="fa-solid fa-igloo"></i>
-          </div>
-          <h3>Freezers & Fridges</h3>
-          <p>Chest Freezers, Double Door Fridges. Reliable cooling.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Vision Section -->
-  <section id="vision" style="background: rgba(255,255,255,0.02);">
-    <div class="container">
-      <div class="hero-grid">
-        <div>
-          <h2>The Silverback Vision</h2>
-          <p style="color: var(--text-muted); margin-top: 1rem; margin-bottom: 2rem;">
-            We are more than just a shop. We are building the most reliable digital-first electronics hub in Kubwa.
+  <main>
+    <section id="home" class="hero-section">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow">📍 Verified Location: Shop 5, Millionaire Plaza, beside MTN office phase 4 kubwa,
+            Abuja</span>
+          <h1 class="text-gradient">Eutopia for durable home and office appliances Kubwa, Abuja.</h1>
+          <p class="hero-desc">
+            We supply Kubwa and Abuja with high-quality ACs, Fridges, and Washing Machines.
+            <strong>Guaranteed 24-hour delivery & installation.</strong>
           </p>
-          <ul style="display: flex; flex-direction: column; gap: 1rem;">
-            <li style="display: flex; gap: 1rem; align-items: center;">
-              <i class="fa-solid fa-check-circle" style="color: var(--color-accent-blue);"></i>
-              <span>Real-time Inventory Updates</span>
-            </li>
-            <li style="display: flex; gap: 1rem; align-items: center;">
-              <i class="fa-solid fa-check-circle" style="color: var(--color-accent-blue);"></i>
-              <span>Certified Installation Experts</span>
-            </li>
-            <li style="display: flex; gap: 1rem; align-items: center;">
-              <i class="fa-solid fa-check-circle" style="color: var(--color-accent-blue);"></i>
-              <span>After-Sales Support & Repairs</span>
-            </li>
-          </ul>
+          <div class="hero-actions">
+            <a href="https://wa.me/2347066570216?text=Hello%20Silverback,%20I%20want%20to%20buy..."
+              class="btn btn-primary" target="_blank" rel="noopener noreferrer"
+              aria-label="Start a WhatsApp chat with us">
+              <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+            <a href="#products" class="btn btn-glass">
+              <i class="fa-solid fa-shop"></i> View Catalogue
+            </a>
+          </div>
         </div>
-        <div>
-          <!-- Could be an image or graphic -->
-          <div class="stat-card" style="position: relative; top: 0; transform: none; text-align: left;">
-            <h3>Why Buy From Us?</h3>
-            <p style="margin-top: 1rem;">
-              Unlike online marketplaces where you don't know the seller,
-              <strong>Silverback is your neighbour.</strong>
-              You can walk into our shop at Shop 5, Millionaire Plaza, beside MTN office phase 4 kubwa.
-              We verify every product before it leaves our shelf.
+
+        <div class="hero-visual">
+          <!-- Stacked Cards Animation Placeholder -->
+          <div class="hero-card-stack">
+            <div class="stat-card card-cooling">
+              <i class="fa-solid fa-snowflake"></i>
+              <div class="stat-card-title">Cooling Systems</div>
+              <small>ACs, Fans & Chillers</small>
+            </div>
+            <div class="stat-card card-delivery">
+              <i class="fa-solid fa-truck-fast"></i>
+              <div class="stat-card-title">Fast Delivery</div>
+              <small>Kubwa & Environs</small>
+            </div>
+            <div class="stat-card card-warranty">
+              <i class="fa-solid fa-medal"></i>
+              <div class="stat-card-title">Warranty</div>
+              <small>On all purchases</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalogue / Products -->
+    <section id="products">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 3rem;">
+          <h2 class="text-gradient">Our Collection</h2>
+          <p style="color: var(--text-muted); max-width: 600px; margin: 1rem auto;">
+            Browse our catalog of tested and trusted home appliances.
+          </p>
+        </div>
+
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-icon">
+              <i class="fa-solid fa-wind"></i>
+            </div>
+            <h3>Air Conditioners</h3>
+            <p>Split Units, Standing ACs, Inverter Types. Keep your home cool.</p>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-icon">
+              <i class="fa-solid fa-shirt"></i>
+            </div>
+            <h3>Washing Machines</h3>
+            <p>Top Loaders, Front Loaders, and Dryers. Efficient and durable.</p>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-icon">
+              <i class="fa-solid fa-sink"></i> <!-- Icon for appliance -->
+              <!-- Using Sink as proxy for Kitchen/White goods if better icon not found, FontAwesome v6 'kitchen-set' is good too -->
+            </div>
+            <h3>Kitchen & Cooking</h3>
+            <p>Gas Cookers, Microwaves, Ovens, Blenders.</p>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-icon">
+              <i class="fa-solid fa-tv"></i>
+            </div>
+            <h3>Smart Entertainment</h3>
+            <p>4K Android TVs, Sound Systems, and Accessories.</p>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="product-card">
+            <div class="product-icon">
+              <i class="fa-solid fa-plug"></i>
+            </div>
+            <h3>Power Solutions</h3>
+            <p>Generators, Stabilizers, and Extension Boxes.</p>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="product-card">
+            <div class="product-icon">
+              <i class="fa-solid fa-igloo"></i>
+            </div>
+            <h3>Freezers & Fridges</h3>
+            <p>Chest Freezers, Double Door Fridges. Reliable cooling.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" style="background: rgba(255,255,255,0.02);">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <h2>The Silverback Vision</h2>
+            <p style="color: var(--text-muted); margin-top: 1rem; margin-bottom: 2rem;">
+              We are more than just a shop. We are building the most reliable digital-first electronics hub in Kubwa.
+            </p>
+            <ul style="display: flex; flex-direction: column; gap: 1rem;">
+              <li style="display: flex; gap: 1rem; align-items: center;">
+                <i class="fa-solid fa-check-circle" style="color: var(--color-accent-blue);"></i>
+                <span>Real-time Inventory Updates</span>
+              </li>
+              <li style="display: flex; gap: 1rem; align-items: center;">
+                <i class="fa-solid fa-check-circle" style="color: var(--color-accent-blue);"></i>
+                <span>Certified Installation Experts</span>
+              </li>
+              <li style="display: flex; gap: 1rem; align-items: center;">
+                <i class="fa-solid fa-check-circle" style="color: var(--color-accent-blue);"></i>
+                <span>After-Sales Support & Repairs</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <!-- Could be an image or graphic -->
+            <div class="stat-card" style="position: relative; top: 0; transform: none; text-align: left;">
+              <h3>Why Buy From Us?</h3>
+              <p style="margin-top: 1rem;">
+                Unlike online marketplaces where you don't know the seller,
+                <strong>Silverback is your neighbour.</strong>
+                You can walk into our shop at Shop 5, Millionaire Plaza, beside MTN office phase 4 kubwa.
+                We verify every product before it leaves our shelf.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container" style="max-width: 800px;">
+        <div class="contact-wrapper">
+          <div style="text-align: center; margin-bottom: 2rem;">
+            <h2>Visit or Contact Us</h2>
+            <p style="color: var(--text-muted);">We are open Monday to Saturday, 9am - 6pm.</p>
+          </div>
+
+          <div style="margin-bottom: 2rem; text-align: center;">
+            <p><i class="fa-solid fa-location-dot" style="color: var(--color-accent-blue);"></i>
+              <strong>Address:</strong>
+              Shop 5, Millionaire Plaza, beside MTN office phase 4 kubwa 901101, Abuja
+            </p>
+            <p style="margin-top: 0.5rem;"><i class="fa-solid fa-phone" style="color: var(--color-accent-blue);"></i>
+              <strong>Phone:</strong> +234 706 657 0216
             </p>
           </div>
+
+          <!-- Map Embed -->
+          <div class="map-container"
+            style="margin-bottom: 2rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
+            <iframe title="Google Map location of Silverback Electronics"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.9997848082207!2d7.3384263!3d9.1544908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104dd9000f109435%3A0xa0016c120d16b74f!2sSILVERBACK%20ELECTRONICS!5e0!3m2!1sen!2sng!4v1768505129197!5m2!1sen!2sng"
+              width="100%" height="300" style="border:0; display: block;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+          <form action="https://formsubmit.co/silverbackelectronicsabj@gmail.com" method="POST">
+            <div class="form-group">
+              <input type="hidden" name="_next" value="thanks.html">
+              <input type="hidden" name="_subject" value="New Inquiry from Website">
+
+              <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="tel" name="phone" placeholder="Phone Number" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="_replyto" placeholder="Your Email (Optional)">
+            </div>
+            <div class="form-group">
+              <textarea name="message" rows="5" placeholder="What product are you looking for?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+          </form>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact-section">
-    <div class="container" style="max-width: 800px;">
-      <div class="contact-wrapper">
-        <div style="text-align: center; margin-bottom: 2rem;">
-          <h2>Visit or Contact Us</h2>
-          <p style="color: var(--text-muted);">We are open Monday to Saturday, 9am - 6pm.</p>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <span class="footer-brand">Silverback Electronics</span>
+        <div style="display: flex; justify-content: center; gap: 1.5rem; margin: 1.5rem 0; font-size: 1.5rem;">
+          <a href="https://www.facebook.com/share/17qKwGACwm/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer"
+            aria-label="Visit us on Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/silverbackelectronics?igsh=c3diYjU3MXhuMHY3" target="_blank"
+            rel="noopener noreferrer" aria-label="Visit us on Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/SilverbackABJ" target="_blank" rel="noopener noreferrer"
+            aria-label="Visit us on X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://vm.tiktok.com/ZSHTehJxmXNPu-KL1lQ/" target="_blank" rel="noopener noreferrer"
+            aria-label="Visit us on TikTok"><i class="fa-brands fa-tiktok"></i></a>
         </div>
-
-        <div style="margin-bottom: 2rem; text-align: center;">
-          <p><i class="fa-solid fa-location-dot" style="color: var(--color-accent-blue);"></i> <strong>Address:</strong>
-            Shop 5, Millionaire Plaza, beside MTN office phase 4 kubwa 901101, Abuja</p>
-          <p style="margin-top: 0.5rem;"><i class="fa-solid fa-phone" style="color: var(--color-accent-blue);"></i>
-            <strong>Phone:</strong> +234 706 657 0216
-          </p>
-        </div>
-
-        <!-- Map Embed -->
-        <div class="map-container"
-          style="margin-bottom: 2rem; border-radius: var(--radius-md); overflow: hidden; border: 1px solid rgba(255,255,255,0.1);">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3938.9997848082207!2d7.3384263!3d9.1544908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104dd9000f109435%3A0xa0016c120d16b74f!2sSILVERBACK%20ELECTRONICS!5e0!3m2!1sen!2sng!4v1768505129197!5m2!1sen!2sng"
-            width="100%" height="300" style="border:0; display: block;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-
-        <form action="https://formsubmit.co/silverbackelectronicsabj@gmail.com" method="POST">
-          <div class="form-group">
-            <input type="hidden" name="_next" value="thanks.html">
-            <input type="hidden" name="_subject" value="New Inquiry from Website">
-
-            <input type="text" name="name" placeholder="Your Name" required>
-          </div>
-          <div class="form-group">
-            <input type="tel" name="phone" placeholder="Phone Number" required>
-          </div>
-          <div class="form-group">
-            <input type="email" name="_replyto" placeholder="Your Email (Optional)">
-          </div>
-          <div class="form-group">
-            <textarea name="message" rows="5" placeholder="What product are you looking for?" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
-        </form>
+        <p>&copy; <span id="year"></span> Silverback Electronics. All rights reserved.</p>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <span class="footer-brand">Silverback Electronics</span>
-      <div style="display: flex; justify-content: center; gap: 1.5rem; margin: 1.5rem 0; font-size: 1.5rem;">
-        <a href="https://www.facebook.com/share/17qKwGACwm/?mibextid=LQQJ4d"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/silverbackelectronics?igsh=c3diYjU3MXhuMHY3"><i
-            class="fa-brands fa-instagram"></i></a>
-        <a href="https://x.com/SilverbackABJ"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="https://vm.tiktok.com/ZSHTehJxmXNPu-KL1lQ/"><i class="fa-brands fa-tiktok"></i></a>
-      </div>
-      <p>&copy; <span id="year"></span> Silverback Electronics. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/2347066570216" class="floating-wa" aria-label="Contact us on WhatsApp" target="_blank"
+      rel="noopener noreferrer">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
-  <!-- Floating WhatsApp -->
-  <a href="https://wa.me/2347066570216" class="floating-wa" aria-label="Chat on WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
+    <!-- Scripts -->
+    <script>
+      // Update Year
+      document.getElementById('year').textContent = new Date().getFullYear();
 
-  <!-- Scripts -->
-  <script>
-    // Update Year
-    document.getElementById('year').textContent = new Date().getFullYear();
+      // Mobile Nav Toggle
+      const navToggle = document.querySelector('.nav-toggle');
+      const navLinks = document.querySelector('.nav-links');
 
-    // Mobile Nav Toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-      const icon = navToggle.querySelector('i');
-      if (navLinks.classList.contains('active')) {
-        icon.classList.remove('fa-bars');
-        icon.classList.add('fa-xmark');
-      } else {
-        icon.classList.remove('fa-xmark');
-        icon.classList.add('fa-bars');
-      }
-    });
-
-    // Close menu when clicking a link
-    document.querySelectorAll('.nav-links a').forEach(link => {
-      link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        navToggle.querySelector('i').classList.add('fa-bars');
-        navToggle.querySelector('i').classList.remove('fa-xmark');
+      navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        const icon = navToggle.querySelector('i');
+        if (navLinks.classList.contains('active')) {
+          icon.classList.remove('fa-bars');
+          icon.classList.add('fa-xmark');
+        } else {
+          icon.classList.remove('fa-xmark');
+          icon.classList.add('fa-bars');
+        }
       });
-    });
 
-    // Set correct redirection URL for the contact form
-    const nextInput = document.querySelector('input[name="_next"]');
-    if (nextInput) {
-      // Robustly create absolute URL for thanks.html relative to current page
-      nextInput.value = new URL('thanks.html', window.location.href).href;
-    }
-  </script>
+      // Close menu when clicking a link
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('active');
+          navToggle.querySelector('i').classList.add('fa-bars');
+          navToggle.querySelector('i').classList.remove('fa-xmark');
+        });
+      });
+
+      // Set correct redirection URL for the contact form
+      const nextInput = document.querySelector('input[name="_next"]');
+      if (nextInput) {
+        // Robustly create absolute URL for thanks.html relative to current page
+        nextInput.value = new URL('thanks.html', window.location.href).href;
+      }
+    </script>
 </body>
 
 </html>
